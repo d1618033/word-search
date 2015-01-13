@@ -12,16 +12,14 @@ uses the max word length instead.
 
 Example
 --------
-    $ cat examples/word_list.txt
-    hello
-    world
 
     $ cat examples/word_list.txt | python word_search.py > examples/word_search.html
     
 Opening examples/word_search.html in your browser should show something like this:
-W   V   F   D   O
-K   O   Y   C   D
-I   G   R   I   T
-H   E   L   L   O
-T   U   K   I   D 
+
+    W   V   F   D   O
+    K   O   Y   C   D
+    I   G   R   I   T
+    H   E   L   L   O
+    T   U   K   I   D 
 

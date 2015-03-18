@@ -31,3 +31,6 @@ class TestLettersInDir(unittest.TestCase):
         expected = None
         actual = word_search.letters_in_dir(self.board, i, j, n, direction)
         self.assertEqual(actual, expected)
+
+    def test_n_greater_than_board_always_out_of_bounds(self):
+        self.assertAllCells(lambda cell: None, n=4)

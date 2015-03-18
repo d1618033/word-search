@@ -21,3 +21,11 @@ class TestLettersInDir(unittest.TestCase):
                     expected = [self.board[i][j]]
                     actual = word_search.letters_in_dir(self.board, i, j, n, direction)
                     self.assertEqual(actual, expected)
+
+    def test_up_2_at_top(self):
+        i , j = 0, 1
+        n = 2
+        direction = "up"
+        expected = None
+        actual = word_search.letters_in_dir(self.board, i, j, n, direction)
+        self.assertEqual(actual, expected)

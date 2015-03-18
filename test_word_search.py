@@ -22,7 +22,6 @@ class TestLettersInDir(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def test_n_1_always_returns_number(self):
-        n = 1
         self.assertAllCells(lambda cell: [cell], n=1)
 
     def test_up_2_at_top(self):

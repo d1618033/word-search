@@ -5,7 +5,7 @@ class TestLettersInDir(unittest.TestCase):
     def setUp(self):
         self.board = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
 
-    def assertAllCells(expected_func, n):
+    def assertAllCells(self, expected_func, n):
         for i in range(3):
             for j in range(3):
                 for direction in word_search.DIRECTIONS:
